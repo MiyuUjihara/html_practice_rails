@@ -1,0 +1,403 @@
+#main-container {
+  width: 80%;
+  min-height: 1600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.left-container {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* right container */
+.right-container {
+  width: 70%;
+  margin: 0 20px;
+
+  .right-container-title1 {
+    height: 80px;
+    margin: 20px 0 0 0;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+
+    img {
+      border-radius: 8px;
+    }
+
+    h3 {
+      width: 90%;
+      margin: 0;
+      line-height: 80px;
+      font-size: 30px;
+      font-weight: 100;
+      padding-left: 10px;
+
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .right-container-body1 {
+    p {
+      font-size: 17px;
+      height: 200px;
+    }
+  }
+
+  .right-container-adidas-body {
+    display: flex;
+    height: 320px;
+    padding-top: 20px;
+
+    p {
+      width: 70%;
+      padding: 0px;
+      margin: 0px;
+      font-size: 18px;
+    }
+
+    img {
+      width: 30%;
+      height: 280px;
+      margin-left: 20px;
+    }
+  }
+
+  .right-container-title2 {
+    height: 60px;
+    margin: 20px 0 0 0;
+    border-bottom: 2px solid #ededed;
+
+    h3 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 200;
+
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+
+  // .right-container-body2 {
+  //   font-size: 18px;
+  // }
+
+  // .right-container-top {
+  //   margin-top: 20px;
+
+  //   .right-container-top-img {
+  //     width: 100%;
+  //     height: 280px;
+  //   }
+  // }
+
+  .slider {
+    margin-top: 20px;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+
+    .slider-inner {
+      width: 100%;
+      height: 100%;
+      animation: slider 10s infinite ease;
+      display: flex;
+      margin-bottom: 10px;
+
+      .slider-item {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+        background: red;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    @keyframes slider {
+      0% {
+      transform: translateY(0);
+      }
+      33% {
+      transform: translateY(-105%);
+      }
+      66% {
+      transform: translateY(-205%);
+      }
+      100% {
+      transform: translateY(0);
+      }
+    }
+  }
+
+  .panel-changer {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+  }
+
+  .wear-comparison {
+    width: 100%;
+
+    h2 {
+      padding-bottom: 10px;
+      font-weight: 300;
+      font-size: 30px;
+      border-bottom: 2px solid #ececec;
+    }
+  }
+
+  .traning-wear-templete {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+
+    .wear-comparison {
+      width: 100%;
+
+      h2 {
+        padding-bottom: 10px;
+        font-weight: 300;
+        font-size: 30px;
+        border-bottom: 2px solid #ececec;
+      }
+    }
+  }
+
+  .wear-comparison-container {
+    width: 100%;
+    // margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+    .wear-comparison-card {
+      width: 46%;
+      height: 185px;
+      margin: 0 0 25px 0;
+      padding: 15px;
+      border: 1px solid #cdcdcd;
+
+      h3 {
+        margin: 0 0 5px 0;
+        font-size: px;
+        align-items: center;
+      }
+
+      .dotted-line {
+        border-bottom: 2px dotted #ececec;
+      }
+
+      .wear-comparison-card-inner {
+        display: flex;
+        width: 100%;
+
+        .wear-comparison-card-inner-text-conteiner {
+          width: 450px;
+          font-size: 19px;
+          color: #414141;
+
+          p {
+            margin: 10px 0;
+            font-size: 22px;
+          }
+
+          span {
+            color: blue;
+            margin-left: 5px;
+            font-size: 15px;
+            border-bottom: 1px solid blue;
+          }
+
+          .next-img {
+            height: 15px;
+          }
+        }
+
+        .wear-comparison-card-inner-img-conteiner {
+          width: 220px;
+
+          .wear-comparison-card-inner-img {
+            margin: 10px 20px 0 20px;
+            width: 85%;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  .banner-img-container {
+    width: 100%;
+
+    .banner-img {
+      width: 100%;
+    }
+  }
+
+  /* adidas right-container-card */
+  .right-container-card {
+    height: 280px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    h3{
+      border-bottom: 3px dotted #ececec;
+      font-size: 24px;
+      margin: 0;
+      padding-bottom: 10px;
+      color: #3e3e3e;
+    }
+
+    .right-container-adidas-body-inner {
+      display: flex;
+
+      p {
+        width: 70%;
+        font-size: 18px;
+      }
+
+      img {
+        width: 30%;
+        height: 200px;
+        margin: 20px 0 0 20px;
+      }
+    }
+  }
+
+  /* adidas merit */
+  .marit-demerit-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 100;
+      margin: 0;
+    }
+
+    .merit {
+      width: 48%;
+      height: 300px;
+      padding: 10px;
+      background-color: #fee9d0;
+      border-radius: 8px;
+      background-image: url(bg_07.gif);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 180px;
+    }
+
+    .demerit {
+      width: 48%;
+      height: 300px;
+      margin-left: 30px;
+      padding: 10px;
+      background-color: #e2eccf;
+      border-radius: 8px;
+      background-image: url(bg_06.gif);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 180px;
+    }
+  }
+
+  /* adidas-wear-explanation */
+  .adidas-wear-explanation {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .adidas-link {
+    width: 75%;
+    height: 120px;
+    margin: 50px auto;
+    border-radius: 8px;
+    background-color: #e60113;
+    color: #ffff;
+    display: flex;
+
+    h3 {
+      width: 10%;
+      margin: 0 20px;
+      line-height: 120px;
+      font-size: 50px;
+      font-weight: 400;
+    }
+
+    p {
+      width: 80%;
+      margin: 0;
+      padding: 30px 0 20px 0;
+      font-size: 22px;
+      font-weight: 200;
+      display: table-cell;
+      text-align: center;
+    }
+
+    .adidas-link-font {
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+
+  /* table */
+  .right-container-table {
+    margin-top: 20px;
+
+    table{
+      border-spacing: 10px;
+
+      .col {
+        background-color: #e0e0e0;
+        width: 120px;
+        height: 80px;
+        color: #6b6b6b;
+      }
+
+      .row {
+        background-color: #e0e0e0;
+        width: 250px;
+        height: 80px;
+        color: #111111;
+
+        span {
+          color: #898989;
+        }
+      }
+
+      td {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #e0e0e0;
+        text-align: center;
+        margin: 5px;
+      }
+
+      td img {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+}
+

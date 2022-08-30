@@ -1,0 +1,66 @@
+= render "/partial/header"
+#main-container
+  = render "/partial/left_container"
+  .right-container
+    .slider
+      .slider-inner
+        .slider-item
+          = image_tag 'top-bn01.jpg'
+      .slider-inner
+        .slider-item
+          = image_tag 'top-bn02.jpg'
+      .slider-inner
+        .slider-item
+          = image_tag 'top-bn03.jpg'
+    .panel-changer
+      = image_tag 'img_btn-panelchager.gif'
+      = image_tag 'img_btn-panelchager02.gif'
+      = image_tag 'img_btn-panelchager02.gif'
+    .wear-comparison
+      %h2 トレーニングウェア比較
+    .traning-wear-templete
+      = render "/partial/traning_wear"
+    .wear-comparison-container
+      .wear-comparison-card
+        %h3 コンプレッションウェアとは？
+        .dotted-line
+        .wear-comparison-card-inner
+          .wear-comparison-card-inner-text-conteiner
+            %p 高機能インナーとは、着用するだけで保温・冷感・筋肉や体幹のサポート・姿勢矯正…
+            = image_tag 'icon01.gif', class: "next-img"
+            %span 続きを見る
+          .wear-comparison-card-inner-img-conteiner
+            = image_tag 'bg_02.gif', class: "wear-comparison-card-inner-img"
+      .wear-comparison-card
+        %h3 高機能インナーとは？
+        .dotted-line
+        .wear-comparison-card-inner
+          .wear-comparison-card-inner-text-conteiner
+            %p 高機能インナーとは、着用するだけで保温・冷感・筋肉や体幹のサポート・姿勢矯正・疲労回復…
+            = image_tag 'icon01.gif', class: "next-img"
+            %span 続きを見る
+          .wear-comparison-card-inner-img-conteiner
+            = image_tag 'bg_03.gif', class: "wear-comparison-card-inner-img"
+      .wear-comparison-card
+        %h3 トレーニングウェアの選び方
+        .dotted-line
+        .wear-comparison-card-inner
+          .wear-comparison-card-inner-text-conteiner
+            %p トレーニングをする際、ウェアの選び方によってトレーニング効果も変わってきます…
+            = image_tag 'icon01.gif', class: "next-img"
+            %span 続きを見る
+          .wear-comparison-card-inner-img-conteiner
+            = image_tag 'bg_04.gif', class: "wear-comparison-card-inner-img"
+      .wear-comparison-card
+        %h3 フィットネスウェアの選び方
+        .dotted-line
+        .wear-comparison-card-inner
+          .wear-comparison-card-inner-text-conteiner
+            %p ジムでの運動や筋トレ、ジョギングなど、フィットネスをする際に着るウェアによりその効果が…
+            = image_tag 'icon01.gif', class: "next-img"
+            %span 続きを見る
+          .wear-comparison-card-inner-img-conteiner
+            = image_tag 'bg_05.gif', class: "wear-comparison-card-inner-img"
+    .banner-img-container
+      = image_tag 'img_banner.jpg', class: "banner-img"
+= render  "/partial/footer", style: "width: 100%;"
