@@ -3,14 +3,21 @@
   = render "/partial/left_container"
   .right-container
     .slider
-      .slider-inner
-        .slider-item
+      -# .slider-inner
+      -#   .slider-item
+      -#     = image_tag 'top-bn01.jpg'
+      -# .slider-inner
+      -#   .slider-item
+      -#     = image_tag 'top-bn02.jpg'
+      -# .slider-inner
+      -#   .slider-item
+      -#     = image_tag 'top-bn03.jpg'
+      %ul.slider-inner
+        %li.slider-item
           = image_tag 'top-bn01.jpg'
-      .slider-inner
-        .slider-item
+        %li.slider-item
           = image_tag 'top-bn02.jpg'
-      .slider-inner
-        .slider-item
+        %li.slider-item
           = image_tag 'top-bn03.jpg'
     .panel-changer
       = image_tag 'img_btn-panelchager.gif'

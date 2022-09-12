@@ -1,3 +1,15 @@
+$gray: #e0e0e0;
+$light-gray: #ececec;
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin: 0px;
+}
+
 #main-container {
   width: 80%;
   min-height: 1600px;
@@ -12,7 +24,6 @@
   }
 }
 
-
 /* right container */
 .right-container {
   width: 70%;
@@ -21,7 +32,7 @@
   .right-container-title1 {
     height: 80px;
     margin: 20px 0 0 0;
-    background-color: #e0e0e0;
+    background-color: $gray;
     border-radius: 8px;
     display: flex;
 
@@ -33,7 +44,7 @@
       width: 90%;
       margin: 0;
       line-height: 80px;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 100;
       padding-left: 10px;
 
@@ -90,23 +101,21 @@
     width: 100%;
     height: 280px;
     overflow: hidden;
+    position: relative;
 
     .slider-inner {
-      width: 100%;
-      height: 100%;
       animation: slider 10s infinite ease;
-      display: flex;
-      margin-bottom: 10px;
 
       .slider-item {
+        position: relative;
         width: 100%;
         height: 100%;
         margin-bottom: 10px;
-        background: red;
 
         img{
-          width: 100%;
-          height: 100%;
+          width:100%;
+          height:280px;
+
         }
       }
     }
@@ -116,13 +125,13 @@
       transform: translateY(0);
       }
       33% {
-      transform: translateY(-105%);
+      transform: translateY(-33.8%);
       }
-      66% {
-      transform: translateY(-205%);
+      67% {
+      transform: translateY(-66%);
       }
       100% {
-      transform: translateY(0);
+      transform: translateY(-10);
       }
     }
   }
@@ -147,7 +156,7 @@
       padding-bottom: 10px;
       font-weight: 300;
       font-size: 30px;
-      border-bottom: 2px solid #ececec;
+      border-bottom: 2px solid $light-gray;
     }
   }
 
@@ -163,7 +172,7 @@
         padding-bottom: 10px;
         font-weight: 300;
         font-size: 30px;
-        border-bottom: 2px solid #ececec;
+        border-bottom: 2px solid $light-gray;
       }
     }
   }
@@ -175,20 +184,20 @@
     justify-content:space-between;
 
     .wear-comparison-card {
-      width: 46%;
-      height: 185px;
-      margin: 0 0 25px 0;
+      width: 45%;
+      height: 200px;
+      margin: 0 0px 20px 0;
       padding: 15px;
       border: 1px solid #cdcdcd;
 
       h3 {
         margin: 0 0 5px 0;
-        font-size: px;
+        font-size: 24px;
         align-items: center;
       }
 
       .dotted-line {
-        border-bottom: 2px dotted #ececec;
+        border-bottom: 2px dotted $light-gray;
       }
 
       .wear-comparison-card-inner {
@@ -201,8 +210,9 @@
           color: #414141;
 
           p {
+            height: 100px;
             margin: 10px 0;
-            font-size: 22px;
+            font-size: 18px;
           }
 
           span {
@@ -241,12 +251,12 @@
   /* adidas right-container-card */
   .right-container-card {
     height: 280px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid $gray;
     padding: 20px;
     margin-bottom: 20px;
 
     h3{
-      border-bottom: 3px dotted #ececec;
+      border-bottom: 3px dotted $light-gray;
       font-size: 24px;
       margin: 0;
       padding-bottom: 10px;
@@ -354,14 +364,14 @@
       border-spacing: 10px;
 
       .col {
-        background-color: #e0e0e0;
+        background-color: $gray;
         width: 120px;
         height: 80px;
         color: #6b6b6b;
       }
 
       .row {
-        background-color: #e0e0e0;
+        background-color: $gray;
         width: 250px;
         height: 80px;
         color: #111111;
@@ -374,7 +384,7 @@
       td {
         width: 100px;
         height: 100px;
-        border: 1px solid #e0e0e0;
+        border: 1px solid $gray;
         text-align: center;
         margin: 5px;
       }
