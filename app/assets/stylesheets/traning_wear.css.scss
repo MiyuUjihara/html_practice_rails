@@ -4,7 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
-  gap: 10px 10px;
 
   .wear-comparison-contents-parts {
     width: 19%;
@@ -18,7 +17,7 @@
 
     .wear-comparison-contents-parts-text {
       text-align: center;
-      font-size: 13px;
+      font-size: 11px;
       margin-bottom: 5px;
     }
   }
